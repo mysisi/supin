@@ -1,0 +1,60 @@
+
+body,div{margin:0;padding:0;}
+html,body{height:100%;}
+body{background:#e0d5c3;}
+img{
+    position: absolute;
+}
+#loading{
+    width: 100%;
+    height:100%;
+    z-index: 999;
+}
+.loading-content{
+     height:100%;
+     margin: 0 auto;
+ }
+.loading-img{
+    position: relative;
+    width:32rem;
+    margin: 0 auto;
+}
+.loading-circle{
+    position: absolute;
+}
+/*#wrap {*/
+    /*min-height: 100%;*/
+    /*_height: 100%;*/
+    /*overflow: hidden;*/
+    /*display: none;*/
+/*}*/
+/*#pages {*/
+    /*position: relative;*/
+    /*width: 32rem;*/
+    /*height: 48rem;*/
+    /*margin: 0 auto;*/
+    /*overflow: hidden;*/
+    /*border-radius: 3px;*/
+    /*top: 50px;*/
+    /*z-index: 1;*/
+/*}*/
+/** iPad **/
+/*@media only screen and (min-width: 768px) and (max-width: 1024px) {}*/
+/** iPhone **/
+/*@media only screen and (min-width: 320px) and (max-width: 767px) {*/
+    /*body{overflow:hidden;}*/
+    /*#pages{*/
+        /*position:absolute;*/
+        /*top:0;*/
+        /*width:100%;*/
+        /*height:100%;*/
+        /*margin:0;*/
+        /*border-radius:0;*/
+    /*}*/
+    /*#loading-content{*/
+        /*position: absolute;*/
+        /*width: 100%;*/
+        /*min-height: 100%;*/
+        /*height: 100%;*/
+    /*}*/
+/*}*/
