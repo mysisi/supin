@@ -15,14 +15,14 @@
         //设置REM
         var setRem=function () {
             var clientWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
-                clientHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight,
+                //clientHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight,
                 fontSize = 40;
-            if((clientHeight/clientWidth)<(3/2)){
-                var nowRem = clientHeight*fontSize / 960;
-            }else{
+            //if((clientHeight/clientWidth)<(3/2)){
+            //    var nowRem = clientHeight*fontSize / 960;
+            //}else{
                 var nowRem = clientWidth*fontSize / 640;
 
-            }
+            //}
             $("html").css("font-size", nowRem + "px");
         };
         onresize = setRem;
