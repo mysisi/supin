@@ -9,6 +9,22 @@
     <title>你的钱是怎么被骗走的</title>
     <link rel="stylesheet" type="text/css" href="css/pg.css">
     <script src="libs/zepto.js"></script>
+    <script>
+        $(function(){
+            //设置REM
+            var setRem=function () {
+                var clientWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+                        fontSize = 40;
+                if(clientWidth>450){
+                    clientWidth = 450;
+                }
+                var nowRem = clientWidth*fontSize / 640;
+                $("html").css("font-size", nowRem + "px");
+            };
+            onresize = setRem;
+            setRem();
+        });
+    </script>
     <script type="text/javascript" src="libs/conSwipe.js"></script>
     <script src="http://j1.58cdn.com.cn/crop/zt/sp/pugong/jweixin-1.0.0.js"></script>
     <script src="js/regist.js"></script>
@@ -52,7 +68,7 @@
                     </div>
                     <a id="submit" href="javascript:void(0)" class="btn-form green btn-submit">提交</a>
                 </div>
-                <div class="footer" src="img/bm/footer.jpg"></div>
+                <div class="footer"></div>
                 <img class="btn-fx" src="img/btn/btn_bg_fx.png">
                 <img class="btn-fx btn-top" src="img/btn/btn_fx.png">
             </div>
