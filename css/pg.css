@@ -38,7 +38,7 @@ div.outbox{
 .wrap2 {
     height: 100%;
     width: 100%;
-    position: absolute;
+    /*position: absolute;*/
 }
 .loading-title{
     width: 13.2rem;
