@@ -23,11 +23,11 @@ div.outbox{
     position: absolute;
 }
 .up-icon{
-    width: 1.25rem;
-    height: 1.25rem;
-    bottom: 0.5rem;
+    width: 4.45rem;
+    height: 1.825rem;
+    bottom: 0.2rem;
     left: 50%;
-    margin-left: -0.625rem;
+    margin-left: -2.225rem;
 }
 .wrap {
      height: 100%;
@@ -718,6 +718,14 @@ a.disabled{
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
 }
+.shakeFade{
+    -webkit-animation-name: shakeFade;
+    animation-name: shakeFade;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration:1.6s;
+    animation-duration: 1.6s;
+}
 .fadeIn{
     -webkit-animation-name: fadeIn;
             animation-name: fadeIn;
@@ -859,7 +867,7 @@ a.disabled{
                 transition-timing-function: ease-in;
     }
     100%{
-        opacity: 0.3;
+        opacity: 1;
         -webkit-transition-timing-function: ease-in;
                 transition-timing-function: ease-in;
     }
@@ -871,7 +879,7 @@ a.disabled{
                 transition-timing-function: ease-in;
     }
     100%{
-        opacity: 0.3;
+        opacity: 1;
         -webkit-transition-timing-function: ease-in;
                 transition-timing-function: ease-in;
     }
@@ -1488,3 +1496,49 @@ a.disabled{
                 transform: scale(1.1);
     }
 }
+@-webkit-keyframes shakeFade{
+    0%{
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+    }
+    80%{
+        opacity: 1;
+        -webkit-transform: translate3d(0, -0.8rem, 0);
+        transform: translate3d(0, -0.8rem, 0);
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+    }
+    100%{
+        opacity: 0;
+        -webkit-transform: translate3d(0, -1rem, 0);
+        transform: translate3d(0, -1rem, 0);
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+    }
+}
+@keyframes shakeFade{
+    0%{
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+    }
+    70%{
+        opacity: 1;
+        -webkit-transform: translate3d(0, -0.8rem, 0);
+        transform: translate3d(0, -0.8rem, 0);
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+    }
+    100%{
+        opacity: 0;
+        -webkit-transform: translate3d(0, -1rem, 0);
+        transform: translate3d(0, -1rem, 0);
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+    }
+ }
