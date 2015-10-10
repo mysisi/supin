@@ -1,10 +1,14 @@
 *{margin:0;padding:0;box-sizing: border-box;}
-html,body{height:100%;font-family:"microsoft yahei","Yuanti SC","Helvetica","Arial","sans-serif";background-color: #ffffff;font-size:250%;}
+html,body{height:100%;font-family:"microsoft yahei","Yuanti SC","Helvetica","Arial","sans-serif";background-color: #ffffff}
 /*body{background: #97ada9;}*/
 ul{list-style: none;}
 img{position: absolute;}
 a{text-decoration: none;background-color: transparent;-webkit-tap-highlight-color:rgba(255,255,255,0);}
 a:active,a:hover {outline: 0;}
+/*input{*/
+    /*-webkit-appearance: caret;*/
+    /*-moz-appearance: caret; /!* mobile firefox too! *!/*/
+/*}*/
 /*公共样式类*/
 .bg-img{
     width: 16rem;
@@ -391,17 +395,19 @@ a.disabled{
     margin: 0 0 0 5.1rem;
 }
 .footer{
+    position: absolute;
+    top: 20rem;
     width:16rem;
-    height: 17%;
-    bottom:0;
+    height: 100%;
+    background-color: #f2f2f2;
 }
 .btn-fx{
     width:6.3rem;
     height: 2.125rem;
-    /*top: 12rem;*/
+    top: 20.5rem;
     left: 50%;
     margin-left: -3.15rem;
-    bottom:1.6rem;
+    /*bottom:1.6rem;*/
 }
 .btn-lslx{
     width:10.125em;
@@ -769,8 +775,8 @@ a.disabled{
                 transform: translate3d(0, 0, 0);
     }
     50% {
-        -webkit-transform: translate3d(0.1rem,0.1rem, 0);
-                transform: translate3d(0.1rem,0.1rem, 0);
+        -webkit-transform: translate3d(0.06rem,0.06rem, 0);
+                transform: translate3d(0.06rem,0.06rem, 0);
     }
 }
 @keyframes btnBounce {
