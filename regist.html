@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <title>你的钱是怎么被骗走的</title>
+    <link rel="stylesheet" type="text/css" href="css/pg.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="pages">
+            <!--表单填写-->
+            <img class="bg-img" src="img/bm/bm_bg.png">
+            <!--表单页-->
+            <div class="page-form outbox">
+                <div class="form">
+                    <div class="info">
+                        <div class="info-group">
+                            <label>姓名</label>
+                            <input class="md-width input" type="text" placeholder="张三" infotype="name" maxlength="4">
+                        </div>
+                        <p>请输入真实姓名</p>
+                    </div>
+                    <div class="info">
+                        <div class="info-group">
+                            <label>报名工厂</label>
+                            <span class="inputSpan" id="factory" placeholder="廊坊富士康" infotype="factory"></span>
+                        </div>
+                        <p>请选择您要报名的工厂</p>
+                    </div>
+                    <div class="info">
+                        <div class="info-group">
+                            <label>联系电话</label>
+                            <input class="md-width input" type="tel" placeholder="" infotype="tel" maxlength="11">
+                            <a id="code" href="javascript:void(0)" class="btn-form green btn-code">获取验证码</a>
+                        </div>
+                        <p>请填写真实电话</p>
+                    </div>
+                    <div class="info">
+                        <div class="info-group">
+                            <label></label>
+                            <input class="md-width input" type="text" placeholder="验证码" infotype="code" maxlength="6">
+                        </div>
+                        <p>请输入正确验证码</p>
+                    </div>
+                    <a id="submit" href="javascript:void(0)" class="btn-form green btn-submit">提交</a>
+                </div>
+                <img class="footer" src="img/bm/footer.jpg">
+                <img class="btn-fx" src="img/btn/btn_bg_fx.png">
+                <img class="btn-fx btn-top" src="img/btn/btn_fx.png">
+            </div>
+            <!--报名成功页-->
+            <div class="page-bmsuc outbox" style="display: none;">
+                <img class="bm-title" src="img/bm/bm_title.png">
+                <img class="bm-city" src="img/bm/bm_city.png">
+                <p class="bmsuc-p">工作人员将会在24小时之内与您联系<br>请保持手机处于开机状态</p>
+                <img class="btn-lslx" src="img/btn/btn_bg_lslx.png">
+                <img class="btn-lslx btn-top" src="img/btn/btn_lslx.png">
+            </div>
+
+        </div>
+    </div>
+
+    <div id="blackBox" class="wrap" style="display: none">
+        <div id="blackmask"></div>
+        <div class="pages">
+            <div class="pop-cont">
+                <img class="share-wx" style="display: none" src="img/ele/share_wx.png">
+                <img class="share-m" style="display: none" src="img/ele/share_m.png">
+            </div>
+            <div class="popSelCon" style="display: none">
+                <div class="popSelHeader">
+                </div>
+                <div class="popSelMain">
+                    <div class="conLeft webFont">
+                        <ul>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<script src="libs/jquery.min.js"></script>-->
+    <script src="libs/zepto.js"></script>
+    <script type="text/javascript" src="libs/conSwipe.js"></script>
+    <script src="http://j1.58cdn.com.cn/crop/zt/sp/pugong/jweixin-1.0.0.js"></script>
+    <script src="js/regist.js"></script>
+</body>
+</html>

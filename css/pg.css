@@ -1,15 +1,26 @@
-*{margin:0;padding:0;}
-html,body{height:100%;font-family:"microsoft yahei","Yuanti SC","Helvetica","Arial","sans-serif";}
+*{margin:0;padding:0;box-sizing: border-box;}
+html,body{height:100%;font-family:"microsoft yahei","Yuanti SC","Helvetica","Arial","sans-serif";background-color: #ffffff}
 /*body{background: #97ada9;}*/
 ul{list-style: none;}
 img{position: absolute;}
 a{text-decoration: none;background-color: transparent;-webkit-tap-highlight-color:rgba(255,255,255,0);}
 a:active,a:hover {outline: 0;}
-
+/*input{*/
+    /*-webkit-appearance: caret;*/
+    /*-moz-appearance: caret; /!* mobile firefox too! *!/*/
+/*}*/
 /*公共样式类*/
 .bg-img{
     width: 16rem;
     height: 24rem;
+}
+img.fullH{
+    height: 100%;
+}
+div.outbox{
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 .up-icon{
     width: 1.25rem;
@@ -32,11 +43,9 @@ a:active,a:hover {outline: 0;}
     margin-left: -6.6rem;
 }
 .loading-title-bg{
-    width: 20rem;
-    height: 16.25rem;
+    width: 16rem;
+    height: 13.2rem;
     top:2.8rem;
-    left: 50%;
-    margin-left: -6.6rem;
 }
 .loading-leg{
     width: 9.425rem;
@@ -45,40 +54,57 @@ a:active,a:hover {outline: 0;}
     left: 2.9rem;
 }
 .loading-bar{
-    width:10.925rem;
+    height: 1.25rem;
+    /*width:10.925rem;*/
     left: 50%;
     bottom:2.8rem;
     margin-left: -5.4625rem;
 }
-#pages {
+.loading-barUp{
+    height: 1.25rem;
+    width: 1.0925rem;
+    left: 2.5375rem;
+    bottom:2.8rem;
+}
+.loading-per{
+    position: absolute;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    left: 2.5375rem;
+    bottom:2.8rem;
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+.pages {
     width: 16rem;
-    height: 24rem;
+    height: 100%;
     margin: 0 auto;
     overflow: hidden;
-    background-color: #ffffff;
     position: relative;
 }
 .page{
     position: absolute;
     width: 16rem;
-    height: 24rem;
+    height: 100%;
 }
 .btn-default{
-    top:19.7rem;
+    /*top:19.7rem;*/
     width: 6.4rem;
     height: 2.825rem;
+    bottom: 1.485rem;
 }
 /*每页的样式*/
 /*第零页*/
 .boy1{
-    width: 14.225rem;
-    height:19.725rem;
-    left:1.775rem;
-    top:4.275rem;
+    width: 16rem;
+    height:21.65rem;
+    bottom: 0;
+    right: -2.2rem;
+    /*top:4.275rem;*/
 }
 .page0-word{
-    width: 9.675rem;
-    height: 13.724rem;
+    width: 10.3rem;
+    height: 21.4rem;
 }
 /*第一页*/
 .page1-word-left{
@@ -146,18 +172,20 @@ a:active,a:hover {outline: 0;}
     width: 11.625rem;
     height:9.775rem;
     right:0;
-    top:11.375rem;
+    /*top:11.375rem;*/
+    bottom: 2.85rem;
 }
 .white-line{
     width: 16rem;
     height: 1.85rem;
-    top:20rem;
+    /*top:20rem;*/
+    bottom: 2.15rem;
 }
 /*第二页情景2*/
 .page2-word1{
     width: 14.4rem;
     height:14rem;
-    top: 0;
+    top: 0.3rem;
     left: 0;
 }
 .page2-word2{
@@ -169,21 +197,29 @@ a:active,a:hover {outline: 0;}
 .black-shadow{
     width: 16.75rem;
     height: 10.475rem;
-    top:9.2rem;
+    /*top:9.2rem;*/
     left:-0.3rem;
+    bottom: 4.325rem;
+}
+.the-gay{
+    width: 16rem;
+    height: 18.5rem;
+    bottom: 0;
 }
 .hand{
     width: 6.35rem;
     height: 6.075rem;
-    top:16.575rem;
+    /*top:16.575rem;*/
     left:1.175rem;
+    bottom: 1.35rem;
 }
 /*第三页情景*/
 .money{
     width: 9.625rem;
     height: 13.75rem;
-    top:10.25rem;
+    /*top:10.25rem;*/
     right: 0;
+    bottom: 0;
 }
 /*第四页情景1*/
 .page4-word1{
@@ -191,6 +227,11 @@ a:active,a:hover {outline: 0;}
     height: 9.4rem;
     top:1.1rem;
     left: 1rem;
+}
+.page4-word2{
+    width: 16rem;
+    height: 24rem;
+    bottom: 0;
 }
 /*第五页情景*/
 .page5-word{
@@ -202,11 +243,11 @@ a:active,a:hover {outline: 0;}
 .people-cry{
     width: 13.425rem;
     height: 16.475rem;
-    top:7.525rem;
+    /*top:7.525rem;*/
     right: 0;
+    bottom: 0;
 }
 .btn-xsp2{
-    top:18rem;
     left: 1rem;
 }
 /*第六页*/
@@ -222,35 +263,41 @@ a:active,a:hover {outline: 0;}
 .paper{
     width: 13.375rem;
     height: 18.15rem;
-    top:5.85rem;
+    /*top:5.85rem;*/
     left:1.4rem;
+    bottom: 0;
 }
 .paper-text{
     width: 9rem;
     height: 3.75rem;
 }
 .paper-1{
-    top: 9.5rem;
+    /*top: 9.5rem;*/
     left: 3.5rem;
+    bottom: 10.75rem;
 }
 .paper-2{
-    top: 11.3rem;
+    /*top: 11.3rem;*/
     left: 3.8rem;
+    bottom: 8.95rem;
 }
 .paper-3{
-    top: 13.8rem;
+    /*top: 13.8rem;*/
     left: 4.3rem;
+    bottom: 6.45rem;
 }
 .paper-4{
-    top: 16.2rem;
+    /*top: 16.2rem;*/
     left: 5rem;
+    bottom: 4.05rem;
 }
 /*第七页*/
 .bus2{
     width: 17.775rem;
     height: 10.2rem;
     right:0;
-    top:10.375rem;
+    /*top:10.375rem;*/
+    bottom: 3.425rem;
 }
 .page7-word{
     width: 8.225rem;
@@ -261,19 +308,14 @@ a:active,a:hover {outline: 0;}
 .people-happy{
     height: 20.7rem;
     width: 11.6rem;
-    top:3.3rem;
+    /*top:3.3rem;*/
     right:0;
+    bottom: 0;
 }
 .btn-qbm{
     left:1rem;
 }
 /*表单页*/
-.page-form{
-    position: relative;
-}
-.page-bmsuc{
-    position: relative;
-}
 .form{
     position: absolute;
     width: 16rem;
@@ -300,6 +342,20 @@ a:active,a:hover {outline: 0;}
     margin-left: 0.3rem;
     padding-left: 0.3rem;
     color: #404040;
+}
+.inputSpan{
+    display: inline-block;
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+    height: 1.2rem;
+    border: solid 1px #cccccc;
+    border-radius: 2px;
+    margin-left: 0.3rem;
+    padding-left: 0.3rem;
+    color: #404040;
+    width: 9.2rem;
+    overflow: hidden;
+    vertical-align: middle;
 }
 .form p{
     margin: 0.1rem 0 0.1rem 5.1rem;
@@ -336,14 +392,20 @@ a.disabled{
     vertical-align: middle;
 }
 .btn-submit{
-    margin: 0.7rem 0 0.1rem 5.1rem;
+    margin: 0 0 0 5.1rem;
+}
+.footer{
+    width:16rem;
+    height: 17%;
+    bottom:0;
 }
 .btn-fx{
     width:6.3rem;
     height: 2.125rem;
-    top: 12rem;
+    /*top: 12rem;*/
     left: 50%;
     margin-left: -3.15rem;
+    bottom:1.6rem;
 }
 .btn-lslx{
     width:10.125em;
@@ -359,6 +421,11 @@ a.disabled{
     left: 50%;
     margin-left: -3.49rem;
 }
+.bm-city{
+    height: 4rem;
+    width: 16rem;
+    bottom: 0;
+}
 .bmsuc-p{
     font-size: 0.75rem;
     position: absolute;
@@ -368,16 +435,19 @@ a.disabled{
 }
 /*遮罩页*/
 #blackmask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
     background-color: #000000;
     filter: alpha(opacity:80);
     opacity: 0.8;
 }
-.blackmask-box {
+.pop-cont {
     width: 16rem;
     height: 100%;
     margin: 0 auto;
     overflow: hidden;
-    position: relative;
+    position: absolute;
 }
 .blackmask{
     width: 16rem;
@@ -399,7 +469,54 @@ a.disabled{
     width: 11.3rem;
     height: 7.45rem;
     bottom:0.5rem;
-    left: 0.5rem;
+    left: 2.5rem;
+}
+/*弹出下拉选择*/
+.popSelCon {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #fff;
+}
+.popSelHeader {
+    height: 43px;
+    border-bottom: 1px solid #dedfe0;
+    background: #efefef;
+}
+.popSelMain {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    height: 275px;
+}
+.popSelMain li {
+    line-height: 1.6rem;
+    position: relative;
+    overflow: hidden;
+    width: 16rem;
+    height: 1.6rem;
+    padding: 0 10px;
+    font-size: 0.8rem;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-overflow: ellipsis;
+}
+.popSelMain li::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    content: '';
+    -webkit-transform: scaleY(.5);
+        -ms-transform: scaleY(.5);
+            transform: scaleY(.5);
+    border-bottom: 1px solid #dedfe0;
+}
+.webFont .selected {
+    color: #00aee1;
 }
 /*动画类*/
 .delay025{
@@ -478,21 +595,13 @@ a.disabled{
     -webkit-animation-duration: .2s;
             animation-duration: .2s;
 }
-a.btn-top{
+.btn-top{
     -webkit-animation-name: btnBounce;
             animation-name: btnBounce;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-}
-a.btn-top:active{
-    -webkit-animation-name: stay;
-            animation-name: stay;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
 }
 .shakeHand {
     -webkit-animation-name: shakeHand;
@@ -658,26 +767,14 @@ a.btn-top:active{
     -webkit-animation-duration: 1s;
             animation-duration: 1s;
 }
-@-webkit-keyframes stay {
-    0%,100% {
-        -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-    }
-}
-@keyframes stay {
-    0%,100% {
-        -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-    }
-}
 @-webkit-keyframes btnBounce {
     0%,100% {
         -webkit-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0);
     }
     50% {
-        -webkit-transform: translate3d(-0.05rem,-0.05rem, 0);
-                transform: translate3d(-0.05rem,-0.05rem, 0);
+        -webkit-transform: translate3d(0.1rem,0.1rem, 0);
+                transform: translate3d(0.1rem,0.1rem, 0);
     }
 }
 @keyframes btnBounce {
@@ -686,8 +783,8 @@ a.btn-top:active{
                 transform: translate3d(0, 0, 0);
     }
     50% {
-        -webkit-transform: translate3d(-0.05rem,-0.05rem, 0);
-                transform: translate3d(-0.05rem,-0.05rem, 0);
+        -webkit-transform: translate3d(0.1rem,0.1rem, 0);
+                transform: translate3d(0.1rem,0.1rem, 0);
     }
 }
 @-webkit-keyframes shakeY {

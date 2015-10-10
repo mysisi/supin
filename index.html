@@ -7,29 +7,33 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="format-detection" content="telephone=no, email=no" />
     <title>你的钱是怎么被骗走的</title>
-    <link rel="stylesheet" type="text/css" href="pg06.css">
+    <link rel="stylesheet" type="text/css" href="css/pg.css">
 </head>
 <body>
     <div class="wrap">
         <div id="pages" class="pages" style="display: none">
             <div class="page loading">
                 <div class="page-img">
-                    <!--<img class="bg-img" src="img/loading/bg-loading.png" >-->
-                    <img class="loading-title scale" src="img/loading/ld-title.png" >
-                    <img class="loading-leg animated delay10 transLeg" src="img/loading/ld-leg.png">
-                    <img class="loading-title-bg animated delay08 fadeInFast" src="img/loading/ld-title-bg.png" >
+                    <img class="loading-title-bg scale" src="img/loading/ld-title.gif" >
+                    <div class="animated delay20 shakeY">
+                        <img class="loading-leg animated delay10 transLeg" src="img/loading/ld-leg.png">
+                    </div>
+                    <img class="loading-title-bg scale" src="img/loading/ld-title-bg.png" >
                     <img class="loading-bar" src="img/loading/loading-1.png">
+                    <img class="loading-barUp" src="img/loading/loading-2.png">
+                    <div class="loading-per"></div>
                 </div>
             </div>
             <div class="page page0">
                 <div class="page-img">
-                    <img class="bg-img" src="img/bg/page0-bg.png">
-                    <img class="page0-word comeInLeft" src="img/word/page0-word.png">
+                    <img class="bg-img fullH" src="img/bg/page0-bg.png">
                     <img class="boy1 comeInRight" src="img/people/page0-boy.png">
-                    <img class="bg-img fadeIn" src="img/common/bg-line.gif">
+                    <img class="page0-word comeInLeft" src="img/word/page0-word.png">
+                    <img class="bg-img fullH fadeIn" src="img/common/bg-line.gif">
                     <img class="up-icon animated delay10 fadeInHalf" src="img/ele/up.gif">
                 </div>
             </div>
+            <!--TODO 位置？-->
             <div class="page page1">
                 <div class="page-img">
                     <img class="page1-badg animated delay08 comeInLeftBounceFast" src="img/people/badgay_little.png">
@@ -39,13 +43,11 @@
                     <img class="page1-gg animated delay10 comeInRightFast" src="img/people/goodgirl_little.png">
                     <img class="bus1 comeInRightFast" src="img/common/bus.png">
                     <img class="page1-word-right animated delay08 comeInRightBounceFast" src="img/word/page1-word-right.png">
-                    <div class="animated delay10 bounceInUp ">
-                        <img  class="btn-default btn-xzj" src="img/btn/btn_bg_def.png">
-                        <a class="btn-top btnBounce"><img class="btn-default btn-xzj" src="img/btn/btn_xzj.png"></a>
-                    </div>
-                    <div class="animated delay10 bounceInUp ">
-                        <img  class="btn-default btn-xsp" src="img/btn/btn_bg_def.png">
-                        <a class="btn-top btnBounce"><img class="btn-default btn-xsp" src="img/btn/btn_xsp.png"></a>
+                    <div class="outbox animated delay10 bounceInUp ">
+                        <img class="btn-default btn-xzj" src="img/btn/btn_bg_def.png">
+                        <img class="btn-default btn-xzj animated delay025 btn-top" src="img/btn/btn_xzj.png">
+                        <img class="btn-default btn-xsp" src="img/btn/btn_bg_def.png">
+                        <img class="btn-default btn-xsp btn-top" src="img/btn/btn_xsp.png">
                     </div>
                 </div>
             </div>
@@ -57,7 +59,7 @@
                         <img class="white-line" src="img/common/white-line.gif">
                         <img class="page2-word scaleLoud" src="img/word/page2-word.png">
                         <img class="bg-img top-rotate fadeIn" src="img/common/bg-line.gif">
-                        <div class="animated transCarR2L">
+                        <div class="outbox animated transCarR2L">
                             <img class="moto2 shakeY" src="img/common/moto.png">
                         </div>
                     </div>
@@ -65,13 +67,13 @@
                         <img class="bg-img" src="img/common/bg-gc.png">
                         <img class="moto2 animated delay40 comeInRight" src="img/common/moto.png">
                         <img class="bg-img animated delay45 comeInTopFast" src="img/common/bg-shadow.png">
-                        <div class="animated delay70 fadeOutFast">
-                            <img class="bg-img animated delay50 comeInRight" src="img/people/badgay_none.png">
+                        <div class="outbox animated delay70 fadeOutFast">
+                            <img class="the-gay animated delay50 comeInRight" src="img/people/badgay_none.png">
                             <img class="page2-word1 animated delay50 comeInLeft" src="img/word/page2-word1.png">
                         </div>
                         <div class="animated delay70 fadeInFast">
                             <img class="black-shadow animated delay70 comeInBottomFast" src="img/people/black-shadow.png">
-                            <img class="bg-img animated delay70" src="img/people/badgay_black.png">
+                            <img class="the-gay animated delay70" src="img/people/badgay_black.png">
                             <img class="page2-word2 animated delay70 comeInLeftFast" src="img/word/page2-word2.png">
                             <img class="hand animated delay70 shakeHand" src="img/ele/hand.png">
                         </div>
@@ -87,7 +89,7 @@
                         <img class="moto2" src="img/common/moto.png">
                         <img class="bg-img" src="img/common/bg-shadow.png">
                         <img class="black-shadow" src="img/people/black-shadow.png">
-                        <img class="bg-img" src="img/people/badgay_black.png">
+                        <img class="the-gay" src="img/people/badgay_black.png">
                         <img class="page2-word2" src="img/word/page2-word2.png">
                         <img class="hand" src="img/ele/hand.png">
                     </div>
@@ -102,12 +104,12 @@
                     <div class="animated delay50 fadeOutFast">
                         <img class="page4-word1 scale" src="img/word/page4-word1.png">
                         <img class="bg-img top-rotate fadeIn" src="img/common/bg-line.gif">
-                        <div class="animated transCarR2L">
+                        <div class="outbox animated transCarR2L">
                             <img class="moto2 shakeY" src="img/common/moto.png">
                         </div>
                     </div>
-                    <div class="animated delay50 fadeInFast">
-                        <img class="bg-img animated delay50 comeInTopSlow" src="img/word/page4-word2.png">
+                    <div class="outbox animated delay50 fadeInFast">
+                        <img class="page4-word2 animated delay50 comeInTopSlow" src="img/word/page4-word2.png">
                     </div>
                     <img class="up-icon animated delay60 fadeInHalf" src="img/ele/up.gif">
                 </div>
@@ -118,9 +120,9 @@
                     <img class="bg-img" src="img/common/bg-shadow.png">
                     <img class="page5-word comeInLeft" src="img/word/page5-word.png">
                     <img class="people-cry fadeIn" src="img/people/people_cry.png">
-                    <div class="animated delay05 bounceInUp ">
+                    <div class="outbox animated delay05 bounceInUp ">
                         <img  class="btn-default btn-xsp2" src="img/btn/btn_bg_def.png">
-                        <a class="btn-top btnBounce"><img class="btn-default btn-xsp2" src="img/btn/btn_xsp.png"></a>
+                        <img class="btn-default btn-xsp2 btn-top" src="img/btn/btn_xsp.png">
                     </div>
                 </div>
             </div>
@@ -143,7 +145,7 @@
                         <img class="white-line" src="img/common/white-line.gif">
                         <img class="page2-word scaleLoud" src="img/word/page2-word.png">
                         <img class="bg-img top-rotate fadeIn" src="img/common/bg-line.gif">
-                        <div class="animated transBusR2L">
+                        <div class="outbox animated transBusR2L">
                             <img class="bus2 shakeY" src="img/common/bus.png">
                         </div>
                     </div>
@@ -152,59 +154,10 @@
                         <img class="bg-img" src="img/common/bg-shadow.png">
                         <img class="page7-word animated delay35 comeInLeft" src="img/word/page7-word.png">
                         <img class="people-happy animated delay30 scalePeople" src="img/people/people_happy.png">
-                        <div class="animated delay35 bounceInUp ">
+                        <div class="outbox animated delay35 bounceInUp ">
                             <img  class="btn-default btn-qbm" src="img/btn/btn_bg_def.png">
-                            <a class="btn-top btnBounce"><img class="btn-default btn-qbm" src="img/btn/btn_qbm.png"></a>
+                            <a href="regist.html"><img class="btn-default btn-qbm btn-top" src="img/btn/btn_qbm.png"></a>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <!--表单填写-->
-            <div class="page page8">
-                <div class="page-img">
-                    <img class="bg-img" src="img/bm/bm_bg.png">
-                    <div class="page-form">
-                        <div class="form">
-                            <div class="info">
-                                <div class="info-group">
-                                    <label>姓名</label>
-                                    <input class="md-width" type="text" placeholder="张三" infotype="name" maxlength="4">
-                                </div>
-                                <p>请输入真实姓名</p>
-                            </div>
-                            <div class="info">
-                                <div class="info-group">
-                                    <label>报名工厂</label>
-                                    <input id="factory" class="lg-width" type="text" placeholder="廊坊富士康" infotype="factory">
-                                </div>
-                                <p>请选择您要报名的工厂</p>
-                            </div>
-                            <div class="info">
-                                <div class="info-group">
-                                    <label>联系电话</label>
-                                    <input class="md-width" type="tel" placeholder="" infotype="tel" maxlength="11">
-                                    <a id="code" href="javascript:void(0)" class="btn-form green btn-code">获取验证码</a>
-                                </div>
-                                <p>请填写真实电话</p>
-                            </div>
-                            <div class="info">
-                                <div class="info-group">
-                                    <label></label>
-                                    <input class="md-width" type="text" placeholder="验证码" infotype="code" maxlength="4">
-                                </div>
-                                <p>请输入正确验证码</p>
-                            </div>
-                            <a id="submit" href="javascript:void(0)" class="btn-form green btn-submit">提交</a>
-                            <img class="btn-fx" src="img/btn/btn_bg_fx.png">
-                            <a class="btn-top btnBounce"><img class="btn-fx" src="img/btn/btn_fx.png"></a>
-                        </div>
-                    </div>
-                    <div class="page-bmsuc" style="display: none;">
-                        <img class="bm-title" src="img/bm/bm_title.png">
-                        <img class="bg-img" src="img/bm/bm_city.png">
-                        <p class="bmsuc-p">工作人员将会在24小时之内与您联系<br>请保持手机处于开机状态</p>
-                        <img class="btn-lslx" src="img/btn/btn_bg_lslx.png">
-                        <a class="btn-top btnBounce"><img class="btn-lslx" src="img/btn/btn_lslx.png"></a>
                     </div>
                 </div>
             </div>
@@ -212,18 +165,12 @@
     </div>
 
     <div id="blackmask" class="wrap" style="display: none">
-        <div class="blackmask-box">
-            <div class="blackmask"></div>
-            <img class="share-wx" style="display: none" src="img/ele/share_wx.png">
-            <img class="share-m" style="display: none" src="img/ele/share_m.png">
-        </div>
     </div>
 
     <script src="libs/jquery.min.js"></script>
-    <!--<script src="libs/prefixfree.jquery.js"></script>-->
-    <!--<script src="libs/prefixfree.min.js"></script>-->
     <script type="text/javascript" src="libs/pageSwitch.js"></script>
+    <script src="libs/jquery.imgpreload.min.js"></script>
     <script src="http://j1.58cdn.com.cn/crop/zt/sp/pugong/jweixin-1.0.0.js"></script>
-    <script src="pg06.js"></script>
+    <script src="js/animate.js"></script>
 </body>
 </html>
