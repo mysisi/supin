@@ -30,9 +30,14 @@ div.outbox{
     margin-left: -0.625rem;
 }
 .wrap {
+     height: 100%;
+     width: 100%;
+     overflow: hidden;
+     position: absolute;
+ }
+.wrap2 {
     height: 100%;
     width: 100%;
-    overflow: hidden;
     position: absolute;
 }
 .loading-title{
@@ -57,21 +62,24 @@ div.outbox{
     height: 1.25rem;
     /*width:10.925rem;*/
     left: 50%;
-    bottom:2.8rem;
+    /*bottom:2.8rem;*/
+    bottom: 11.6%;
     margin-left: -5.4625rem;
 }
 .loading-barUp{
     height: 1.25rem;
     width: 1.0925rem;
     left: 2.5375rem;
-    bottom:2.8rem;
+    /*bottom:2.8rem;*/
+    bottom: 11.6%;
 }
 .loading-per{
     position: absolute;
     height: 1.25rem;
     line-height: 1.25rem;
     left: 2.5375rem;
-    bottom:2.8rem;
+    /*bottom:2.8rem;*/
+    bottom: 11.6%;
     color: #ffffff;
     font-size: 0.8rem;
 }
@@ -80,6 +88,12 @@ div.outbox{
     height: 100%;
     margin: 0 auto;
     overflow: hidden;
+    position: relative;
+}
+.pages2 {
+    width: 16rem;
+    height: 100%;
+    margin: 0 auto;
     position: relative;
 }
 .page{
@@ -152,9 +166,11 @@ div.outbox{
 /*第二页情景1*/
 .bg_city{
     width: 66.475rem;
-    height:10rem;
+    /*height:10rem;*/
+    height: 41%;
     left:0;
-    top:9.5rem;
+    /*top:9.5rem;*/
+    top: 39.58%;
 }
 .top-rotate{
     -webkit-transform: rotate(30deg) translateX(-19%);
@@ -184,7 +200,8 @@ div.outbox{
 /*第二页情景2*/
 .page2-word1{
     width: 14.4rem;
-    height:14rem;
+    /*height:14rem;*/
+    height: 58%;
     top: 0.3rem;
     left: 0;
 }
@@ -402,7 +419,7 @@ a.disabled{
     position: absolute;
     top: 19rem;
     width:16rem;
-    height: 100%;
+    height: 30%;
     background-color: #f2f2f2;
 }
 .btn-fx{
@@ -1469,16 +1486,5 @@ a.disabled{
     100% {
         -webkit-transform: scale(1.1);
                 transform: scale(1.1);
-    }
-}
-@media screen and(max-height: 480px) {
-    .footer {
-        top: 18rem;
-    }
-    .btn-fx{
-        top: 18.5rem;
-    }
-    .form{
-        margin-top: 7.3rem;
     }
 }
