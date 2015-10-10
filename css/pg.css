@@ -322,8 +322,10 @@ div.outbox{
     margin-top: 7.3rem;
 }
 .info-group{
-    height: 1.3rem;
-    line-height: 1.3rem;
+    /*height: 1.3rem;*/
+    /*line-height: 1.3rem;*/
+    height: 1.1rem;
+    line-height: 1.1rem;
 }
 .info-group label{
     display: inline-block;
@@ -396,7 +398,7 @@ a.disabled{
 }
 .footer{
     position: absolute;
-    top: 19rem;
+    top: 18rem;
     width:16rem;
     height: 100%;
     background-color: #f2f2f2;
@@ -404,7 +406,7 @@ a.disabled{
 .btn-fx{
     width:6.3rem;
     height: 2.125rem;
-    top: 19.5rem;
+    top: 18.5rem;
     left: 50%;
     margin-left: -3.15rem;
     /*bottom:1.6rem;*/
@@ -1465,5 +1467,13 @@ a.disabled{
     100% {
         -webkit-transform: scale(1.1);
                 transform: scale(1.1);
+    }
+}
+@media screen and(min-height: 480px) {
+    .footer {
+        top: 18rem;
+    }
+    .btn-fx{
+        top: 18.5rem;
     }
 }
