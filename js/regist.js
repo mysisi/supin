@@ -11,7 +11,20 @@
     var url = "http://yunying.wx.supin.58.com";
     $(function(){
 
-
+        $(function(){
+            //设置REM
+            var setRem=function () {
+                var clientWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+                    fontSize = 40;
+                if(clientWidth>450){
+                    clientWidth = 450;
+                }
+                var nowRem = clientWidth*fontSize / 640;
+                $("html").css("font-size", nowRem + "px");
+            };
+            onresize = setRem;
+            setRem();
+        });
         bindEvent();
 
     });
@@ -23,7 +36,8 @@
             if(isWeiXin()){
                 popShow(".share-wx");
             }else{
-                window.history.replaceState({}, document.title, "http://yunying.wx.supin.58.com/generalwork/index/");
+                //window.history.replaceState({}, document.title, "http://yunying.wx.supin.58.com/generalwork/index/");
+                //window.history.replaceState({}, document.title, "http://sisiliu.ml/supin");
                 popShow(".share-m");
             }
         });
@@ -32,7 +46,8 @@
             if(isWeiXin()){
                 popShow(".share-wx");
             }else{
-                window.history.replaceState({}, document.title, "http://yunying.wx.supin.58.com/generalwork/index/");
+                //window.history.replaceState({}, document.title, "http://yunying.wx.supin.58.com/generalwork/index/");
+                //window.history.replaceState({}, document.title, "http://sisiliu.ml/supin");
                 popShow(".share-m");
             }
         });
