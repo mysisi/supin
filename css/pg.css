@@ -319,7 +319,7 @@ div.outbox{
 .form{
     position: absolute;
     width: 16rem;
-    margin-top: 7.3rem;
+    margin-top: 8.3rem;
 }
 .info-group{
     /*height: 1.3rem;*/
@@ -398,7 +398,7 @@ a.disabled{
 }
 .footer{
     position: absolute;
-    top: 18rem;
+    top: 19rem;
     width:16rem;
     height: 100%;
     background-color: #f2f2f2;
@@ -406,7 +406,7 @@ a.disabled{
 .btn-fx{
     width:6.3rem;
     height: 2.125rem;
-    top: 18.5rem;
+    top: 19.5rem;
     left: 50%;
     margin-left: -3.15rem;
     /*bottom:1.6rem;*/
@@ -1469,11 +1469,14 @@ a.disabled{
                 transform: scale(1.1);
     }
 }
-@media screen and(min-height: 480px) {
+@media screen and(max-height: 480px) {
     .footer {
         top: 18rem;
     }
     .btn-fx{
         top: 18.5rem;
+    }
+    .form{
+        margin-top: 7.3rem;
     }
 }
