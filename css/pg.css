@@ -5,10 +5,6 @@ ul{list-style: none;}
 img{position: absolute;}
 a{text-decoration: none;background-color: transparent;-webkit-tap-highlight-color:rgba(255,255,255,0);}
 a:active,a:hover {outline: 0;}
-input{
-    -webkit-appearance: caret;
-    -moz-appearance: caret; /!* mobile firefox too! *!/
-}
 /*公共样式类*/
 .bg-img{
     width: 16rem;
