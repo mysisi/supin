@@ -37,7 +37,7 @@
                 popShow(".share-wx");
             }else{
                 //window.history.replaceState({}, document.title, "http://yunying.wx.supin.58.com/generalwork/index/");
-                //window.history.replaceState({}, document.title, "http://sisiliu.ml/supin");
+                window.history.replaceState({}, document.title, "http://sisiliu.ml/supin");
                 popShow(".share-m");
             }
         });
@@ -47,7 +47,7 @@
                 popShow(".share-wx");
             }else{
                 //window.history.replaceState({}, document.title, "http://yunying.wx.supin.58.com/generalwork/index/");
-                //window.history.replaceState({}, document.title, "http://sisiliu.ml/supin");
+                window.history.replaceState({}, document.title, "http://sisiliu.ml/supin");
                 popShow(".share-m");
             }
         });
