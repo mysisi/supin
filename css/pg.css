@@ -5,10 +5,10 @@ ul{list-style: none;}
 img{position: absolute;}
 a{text-decoration: none;background-color: transparent;-webkit-tap-highlight-color:rgba(255,255,255,0);}
 a:active,a:hover {outline: 0;}
-/*input{*/
-    /*-webkit-appearance: caret;*/
-    /*-moz-appearance: caret; /!* mobile firefox too! *!/*/
-/*}*/
+input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
 /*公共样式类*/
 .bg-img{
     width: 16rem;
@@ -190,20 +190,22 @@ div.outbox{
 }
 .page2-word2{
     width: 15.375rem;
-    height:8.275rem;
+    height:34%;
     top: 0.3rem;
     left: 0.5rem;
 }
 .black-shadow{
     width: 16.75rem;
-    height: 10.475rem;
+    /*height: 10.475rem;*/
+    height: 43.6%;
     /*top:9.2rem;*/
     left:-0.3rem;
     bottom: 4.325rem;
 }
 .the-gay{
     width: 16rem;
-    height: 18.5rem;
+    /*height: 18.5rem;*/
+    height: 77%;
     bottom: 0;
 }
 .hand{
