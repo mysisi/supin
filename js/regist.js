@@ -11,18 +11,6 @@
     var url = "http://yunying.wx.supin.58.com";
     $(function(){
 
-        //设置REM
-        var setRem=function () {
-            var clientWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
-                fontSize = 40;
-            if(clientWidth>450){
-                clientWidth = 450;
-            }
-            var nowRem = clientWidth*fontSize / 640;
-            $("html").css("font-size", nowRem + "px");
-        };
-        onresize = setRem;
-        setRem();
 
         bindEvent();
 
@@ -35,6 +23,7 @@
             if(isWeiXin()){
                 popShow(".share-wx");
             }else{
+                window.history.replaceState({}, document.title, "http://yunying.wx.supin.58.com/generalwork/index/");
                 popShow(".share-m");
             }
         });
@@ -43,6 +32,7 @@
             if(isWeiXin()){
                 popShow(".share-wx");
             }else{
+                window.history.replaceState({}, document.title, "http://yunying.wx.supin.58.com/generalwork/index/");
                 popShow(".share-m");
             }
         });
@@ -61,9 +51,7 @@
         //获取验证码
         $("#code").on("click",getCode);
         //提交
-        $("#submit").on("click",function(){
-            submitInfo();
-        });
+        $("#submit").on("click",submitInfo);
         //黑幕
         $("#blackBox").on("click",function(){
             popHide();
@@ -120,6 +108,7 @@
             result += ({true:1,false:0})[(checkInfo($($forms[i]).find("input"))||checkInfo($($forms[i]).find("span")))];
         }
         if(result==4){
+            $("#submit").off("click",submitInfo);
             var realName = $($forms[0]).find("input").val();
             var enterprise = $($forms[1]).find("span").html();
             var mobile = $($forms[2]).find("input").val();
@@ -135,19 +124,21 @@
                     authCode:authCode
                 },
                 error: function(data) {
+                    $("#submit").on("click",submitInfo);
                 },
                 success: function(data) {
-                        if(data.entity==2){
-                            $(".bmsuc-p").html("您已经完成报名，赶快分享给老乡<br>拒绝黑中介，找靠谱好工作，尽在58速聘");
-                            $(".page-form").hide();
-                            $(".page-bmsuc").show();
-                        }else if(data.entity==1){
-                            $(".bmsuc-p").html("工作人员将会在24小时内与您联系<br>请保持手机处于开机状态。");
-                            $(".page-form").hide();
-                            $(".page-bmsuc").show();
-                        }else {
-                            alert(data.returnMessage);
-                        }
+                    if(data.entity==2){
+                        $(".bmsuc-p").html("工作人员将会在24小时内与您联系<br>请保持手机处于开机状态。");
+                        $(".page-form").hide();
+                        $(".page-bmsuc").show();
+                    }else if(data.entity==1){
+                        $(".bmsuc-p").html("您已经完成报名，赶快分享给老乡<br>拒绝黑中介，找靠谱好工作，尽在58速聘");
+                        $(".page-form").hide();
+                        $(".page-bmsuc").show();
+                    }else {
+                        alert(data.returnMessage);
+                    }
+                    $("#submit").on("click",submitInfo);
                 }
             });
         }
@@ -258,8 +249,6 @@
             var wxconfig={
                 title: "想骗钱，没门",
                 desc: "可恶的黑中介，竟然••••••",
-                //TODO:链接地址？
-                //link: location.href,
                 link: "http://yunying.wx.supin.58.com/generalwork/index/",
                 imgUrl: "http://c.58cdn.com.cn/crop/zt/supin/koubei/img/ele/200x200_wx.png",
                 success: function(){
