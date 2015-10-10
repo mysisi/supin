@@ -319,7 +319,7 @@ div.outbox{
 .form{
     position: absolute;
     width: 16rem;
-    margin-top: 8.3rem;
+    margin-top: 7.3rem;
 }
 .info-group{
     height: 1.3rem;
@@ -396,7 +396,7 @@ a.disabled{
 }
 .footer{
     position: absolute;
-    top: 20rem;
+    top: 19rem;
     width:16rem;
     height: 100%;
     background-color: #f2f2f2;
@@ -404,7 +404,7 @@ a.disabled{
 .btn-fx{
     width:6.3rem;
     height: 2.125rem;
-    top: 20.5rem;
+    top: 19.5rem;
     left: 50%;
     margin-left: -3.15rem;
     /*bottom:1.6rem;*/
