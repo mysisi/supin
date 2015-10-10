@@ -9,29 +9,13 @@
     <title>你的钱是怎么被骗走的</title>
     <link rel="stylesheet" type="text/css" href="css/pg.css">
     <script src="libs/zepto.js"></script>
-    <script>
-        $(function(){
-            //设置REM
-            var setRem=function () {
-                var clientWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
-                        fontSize = 40;
-                if(clientWidth>450){
-                    clientWidth = 450;
-                }
-                var nowRem = clientWidth*fontSize / 640;
-                $("html").css("font-size", nowRem + "px");
-            };
-            onresize = setRem;
-            setRem();
-        });
-    </script>
     <script type="text/javascript" src="libs/conSwipe.js"></script>
     <script src="http://j1.58cdn.com.cn/crop/zt/sp/pugong/jweixin-1.0.0.js"></script>
     <script src="js/regist.js"></script>
 </head>
 <body>
-    <div class="wrap">
-        <div class="pages">
+    <div class="wrap2">
+        <div class="pages2">
             <!--表单填写-->
             <img class="bg-img" src="img/bm/bm_bg.png">
             <!--表单页-->
@@ -84,7 +68,7 @@
         </div>
     </div>
 
-    <div id="blackBox" class="wrap" style="display: none">
+    <div id="blackBox" class="wrap" style="display: none;position: fixed">
         <div id="blackmask"></div>
         <div class="pages">
             <div class="pop-cont">
@@ -105,7 +89,6 @@
         </div>
     </div>
 
-    <!--<script src="libs/jquery.min.js"></script>-->
 
 </body>
 </html>
