@@ -24,7 +24,7 @@
         setRem();
 
         pw=new pageSwitch('pages',{
-            duration:1,                  //int 页面过渡时间
+            duration:100,                  //int 页面过渡时间
             direction:1,                    //int 页面切换方向，0横向，1纵向
             start:0,                        //int 默认显示页面
             loop:false,                      //bool 是否循环切换
