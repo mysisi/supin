@@ -45,6 +45,12 @@
             if(prev==6&&next==5){
                 pw.slide(1);
             }
+            if(next==1){
+                pw.freeze(true);
+                setTimeout(function(){
+                    pw.freeze(false);
+                },1000);
+            }
             if(next==6){
                 pw.freeze(true);
                 setTimeout(function(){
