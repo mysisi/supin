@@ -23,11 +23,11 @@ div.outbox{
     position: absolute;
 }
 .up-icon{
-    width: 4.45rem;
-    height: 1.825rem;
+    width: 2.66rem;
+    height: 1.28rem;
     bottom: 0.2rem;
     left: 50%;
-    margin-left: -2.225rem;
+    margin-left: -1.33rem;
 }
 .wrap {
      height: 100%;
@@ -437,6 +437,13 @@ a.disabled{
     left: 50%;
     margin-left: -5.06rem;
 }
+.bm-code{
+    width:12.5rem;
+    height:12.5rem;
+    top: 22.5rem;
+    left: 50%;
+    margin-left: -6.25rem;
+}
 .bm-title{
     width: 6.98rem;
     height: 3.625rem;
@@ -445,9 +452,9 @@ a.disabled{
     margin-left: -3.49rem;
 }
 .bm-city{
-    height: 4rem;
+    height: 24rem;
     width: 16rem;
-    bottom: 0;
+    top: 17rem;
 }
 .bmsuc-p{
     font-size: 0.75rem;
@@ -605,6 +612,10 @@ a.disabled{
 .delay80{
     -webkit-animation-delay:8s;
             animation-delay:8s;
+}
+.delay90{
+    -webkit-animation-delay:9s;
+    animation-delay:9s;
 }
 .animated {
     -webkit-animation-fill-mode: both;
