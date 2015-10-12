@@ -7,7 +7,6 @@
 //页面
 (function(){
 
-    var isSroll=0;
     $(function(){
 
         //设置REM
@@ -29,9 +28,8 @@
             direction:1,                    //int 页面切换方向，0横向，1纵向
             start:0,                        //int 默认显示页面
             loop:false,                      //bool 是否循环切换
-            //ease:/flip(?!Paper)/.test(ts)?'bounce':'ease',
             ease:'ease',                    //string|function 过渡曲线动画，详见下方说明
-            transition:'fade',             //string|function转场方式，详见下方说明
+            transition:'slide',             //string|function转场方式，详见下方说明
             mouse:true,                     //bool 是否启用鼠标
             mousewheel:true,                //bool 是否启用鼠标滚轮切换
             arrowkey:true                   //bool 是否启用键盘
@@ -41,31 +39,18 @@
         $("#pages").show();
         pw.freeze(true);
         preLoadImg();
-        //document.onreadystatechange = dosome;//当页面加载状态改变的时候执行这个方法.
-        //function dosome() {
-        //    if(document.readyState == "complete"){ //当页面加载状态完成
-        //        //setTimeout(function(){
-        //        //    pw.next();
-        //        //    pw.remove(0);
-        //        //    pw.freeze(false);
-        //        //},2000);
-        //    }
-        //}
 
         //事件绑定
         pw.on("after",function(next,prev){
             if(prev==6&&next==5){
                 pw.slide(1);
             }
-            if(next==7&&prev==8){
-                pw.slide(1);
+            if(next==6){
+                pw.freeze(true);
+                setTimeout(function(){
+                    pw.freeze(false);
+                },5000);
             }
-        });
-        pw.on("before",function(next,prev){
-            //console.log(prev,next);
-            //if(next==8&&prev==7){
-            //    pw.slide(1);
-            //}
         });
         bindEvent();
 
@@ -83,14 +68,6 @@
         });
         $(".btn-top.btn-xsp2").on("click",function(){
             pw.slide(6);
-        });
-
-        //禁止滑屏
-        document.addEventListener('touchmove', function(event) {
-            //判断条件,条件成立才阻止背景页面滚动,其他情况不会再影响到页面滚动
-            if(isSroll){
-                event.preventDefault();
-            }
         });
     }
 
@@ -184,9 +161,9 @@
 
         wx.ready(function() {
             var wxconfig={
-                title: "想骗钱，没门",
+                title: "你的钱是怎么被骗走的",
                 desc: "可恶的黑中介，竟然••••••",
-                link: location.href,
+                link: "http://yunying.wx.supin.58.com/generalwork/index/",
                 imgUrl: "http://c.58cdn.com.cn/crop/zt/supin/koubei/img/ele/200x200_wx.png",
                 success: function(){
                     pw.slide(0);
