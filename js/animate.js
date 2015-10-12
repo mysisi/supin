@@ -9,6 +9,7 @@
 
     $(function(){
 
+        var isSroll=0;
         //设置REM
         var setRem=function () {
             var clientWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
@@ -40,21 +41,37 @@
         pw.freeze(true);
         preLoadImg();
 
+        var freezeStatus = false;
+
         //事件绑定
         pw.on("after",function(next,prev){
+            console.log(next,prev);
             if(prev==6&&next==5){
                 pw.slide(1);
             }
             if(next==6){
                 pw.freeze(true);
+                isSroll=1;
                 setTimeout(function(){
+                    freezeStatus = false;
                     pw.freeze(false);
+                    isSroll=0;
                 },5000);
             }
         });
+        pw.on("update",function(){
+            console.log("update");
+        });
         bindEvent();
-
+        document.addEventListener('touchmove', function(event) {
+            //判断条件,条件成立才阻止背景页面滚动,其他情况不会再影响到页面滚动
+            if(isSroll){
+                event.preventDefault();
+            }
+        });
     });
+
+
 
     function bindEvent(){
 
