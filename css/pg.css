@@ -549,6 +549,10 @@ a.disabled{
     color: #00aee1;
 }
 /*动画类*/
+.delay01{
+    -webkit-animation-delay:0.1s;
+    animation-delay:0.1s;
+}
 .delay025{
     -webkit-animation-delay:0.25s;
             animation-delay:0.25s;
