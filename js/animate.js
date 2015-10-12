@@ -9,7 +9,6 @@
 
     $(function(){
 
-        var isSroll=0;
         //设置REM
         var setRem=function () {
             var clientWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
@@ -53,22 +52,12 @@
                 pw.freeze(true);
                 isSroll=1;
                 setTimeout(function(){
-                    freezeStatus = false;
                     pw.freeze(false);
                     isSroll=0;
                 },5000);
             }
         });
-        pw.on("update",function(){
-            console.log("update");
-        });
         bindEvent();
-        document.addEventListener('touchmove', function(event) {
-            //判断条件,条件成立才阻止背景页面滚动,其他情况不会再影响到页面滚动
-            if(isSroll){
-                event.preventDefault();
-            }
-        });
     });
 
 
@@ -85,6 +74,9 @@
         });
         $(".btn-top.btn-xsp2").on("click",function(){
             pw.slide(6);
+        });
+        $(document).on("touchmove", function(e) {
+            e.preventDefault()
         });
     }
 
