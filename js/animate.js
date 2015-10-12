@@ -42,15 +42,15 @@
 
         //事件绑定
         pw.on("after",function(next,prev){
-            //if(prev==6&&next==5){
-            //    pw.slide(1);
-            //}
-            //if(next==6){
-            //    pw.freeze(true);
-            //    setTimeout(function(){
-            //        pw.freeze(false);
-            //    },5000);
-            //}
+            if(prev==6&&next==5){
+                pw.slide(1);
+            }
+            if(next==6){
+                pw.freeze(true);
+                setTimeout(function(){
+                    pw.freeze(false);
+                },5000);
+            }
         });
         bindEvent();
 
